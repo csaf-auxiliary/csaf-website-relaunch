@@ -1,0 +1,18 @@
+[
+
+    {
+        "url": "/specification/",
+        "label": "Specification",
+        "external": false
+    },
+    {
+        "url": "/presentations/",
+        "label": "Presentations",
+        "external": false
+    },
+    {
+        "url": "/tools/",
+        "label": "Open Source Tools",
+        "external": false
+    }
+]
