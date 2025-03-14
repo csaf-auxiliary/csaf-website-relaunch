@@ -36,7 +36,7 @@ The website is built and deployed automatically via GitHub Actions.
 - Deployments can also be triggered manually from the **GitHub Actions** tab.
 
 - The latest version is published at
-  [GitHub Pages](https://<username>.github.io/<repository_name>).
+  [GitHub Pages](https://csaf-auxiliary.github.io/csaf-website-relaunch).
 
 No manual deployment is required. Changes go live once reviewed and merged.
 

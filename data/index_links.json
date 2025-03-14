@@ -6,13 +6,13 @@
         "icon": "github.svg"
     },
     {
-        "url": "/tools/",
+        "url": "tools/",
         "label": "Open Source Tools",
         "external": false,
         "icon": "rocket.svg"
     },
     {
-        "url": "/presentations/",
+        "url": "presentations/",
         "label": "CSAF Presentations",
         "external": false,
         "icon": "presentation-play.svg"
