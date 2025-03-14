@@ -1,6 +1,6 @@
 [
     {
-        "label": "BSI CSAF Lister",
+        "label": "Lister",
         "url": "https://wid.cert-bund.de/.well-known/csaf-aggregator/aggregator.json",
         "external": true
     },
