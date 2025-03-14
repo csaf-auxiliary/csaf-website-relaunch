@@ -9,6 +9,8 @@ languageCode = 'en-us'
 title = 'CSAF'
 disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
 ignoreFiles = [".license$"]
+baseURL = "https://csaf-auxiliary.github.io/csaf-website-relaunch/"
+canonifyURLs = "true"
 
 [markup]
   [markup.goldmark]
