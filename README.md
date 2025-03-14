@@ -235,6 +235,13 @@ The `hugo.toml` file contains the main configuration settings for the Hugo proje
 - **disableKinds**: Specifies which kinds of content to disable.
    The page types required for generating list-pages are disabled.
 
+- **baseUrl**: Specifies the root URL of your site,
+    which is used as the base for all relative links.
+
+- **canonifyURLs**: When set to true, allows Hugo to add baseUrl
+to the relative links.
+At this stage is needed to handle base url that is not the site root.
+
 ### Markup Settings
 
 Goldmark Parser is the tool that turns written content from the markdown files
