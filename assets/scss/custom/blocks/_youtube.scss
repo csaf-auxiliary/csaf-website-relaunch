@@ -16,7 +16,7 @@
   }
 
   &::before {
-    background-image: url(../../../icons/youtube-button.svg);
+    background-image: url(../icons/youtube-button.svg);
     background-size: auto 64px;
     background-position: center center;
 
@@ -34,13 +34,13 @@
   }
 
   &:hover::before {
-    background-image: url(../../../icons/youtube-button-hover.svg);
+    background-image: url(../icons/youtube-button-hover.svg);
   }
 
   &::after {
     $background-size: 20px;
 
-    background-image: url(../../../icons/youtube-logo.svg);
+    background-image: url(../icons/youtube-logo.svg);
     background-size: auto $background-size;
     background-position: calc(100% - #{$background-size} / 2) calc(100% - #{$background-size} / 2);
 
