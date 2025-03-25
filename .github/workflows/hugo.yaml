@@ -47,7 +47,7 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: Europe/Berlin
-        run: hugo --gc --minify --baseURL "https://csaf-auxiliary.github.io/csaf-website-relaunch/"
+        run: hugo --gc --minify --baseURL "https://www.csaf.dev"
 
       - name: Remove .license files from 'public' folder
         run: find public -type f -name "*.license" -exec rm -f {} \;
