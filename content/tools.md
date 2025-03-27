@@ -97,3 +97,18 @@ A collection of software that allow you to store bill of materials (SBOM), vulne
 ### [CSAF Perl Tookit](https://metacpan.org/dist/CSAF)
 A Perl distribution (with modules and command-line tools) for create, validate, convert (in HTML), publish and download CSAF documents.
 {{% /card %}}
+
+{{% card %}}
+### [kotlin-csaf](https://github.com/csaf-sbom/kotlin-csaf)
+A Kotlin implementation of the CSAF standard for the JVM. It supports parsing and validation of CSAF 2.0 documents.
+{{% /card %}}
+
+{{% card %}}
+### [csaf-rust](https://github.com/csaf-poc/csaf-rust)
+A Rust implementation of the CSAF standard. It supports parsing (and partial validation) of CSAF 2.0 and CSAF 2.1 (Draft) documents.
+{{% /card %}}
+
+{{% card %}}
+#### [DependencyTrack CSAF Integration](https://github.com/csaf-sbom/hyades-csaf)
+An integration for the popular dependency management system DependencyTrack.
+{{% /card %}}
