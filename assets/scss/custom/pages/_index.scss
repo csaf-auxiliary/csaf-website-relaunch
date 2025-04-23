@@ -1,6 +1,6 @@
 .index {
   &__container {
-    @media (min-width: $bp-xxl) {
+    @include media-breakpoint-up(xxl) {
       max-width: 1112px;
     }
   }
@@ -44,23 +44,23 @@
   background-color: white;
   border-bottom: 2px solid $accent;
 
-  @media (min-width: $bp-xl) {
+  @include media-breakpoint-up(xl) {
     letter-spacing: 0.5px;
     padding-inline: 12px;
   }
 
-  @media (min-width: $bp-lg) {
+  @include media-breakpoint-up(lg) {
     line-height: 76px;
   }
 
-  @media (max-width: 991.98px) {
+  @include media-breakpoint-down(lg) {
     min-height: 178px;
   }
 
   &__icon {
     $size: 55px;
 
-    @media (max-width: 575.99px) {
+    @include media-breakpoint-down(sm) {
       $size: 45px;
       margin-bottom: 10px;
     }
@@ -109,7 +109,7 @@
   .row {
     gap: 20px;
 
-    @media (max-width: 767.98px) {
+    @include media-breakpoint-down(md) {
       margin-bottom: map-get($spacers, 5);
     }
   }
@@ -121,7 +121,7 @@
   }
 
   .image-wrapper {
-    @media (max-width: 767.98px) {
+    @include media-breakpoint-down(md) {
       order: -1;
     }
   }
