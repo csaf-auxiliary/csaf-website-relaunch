@@ -200,7 +200,7 @@ The **Manrope** font is used in this project.
 The following images are sourced from Pixabay
 and are free for commercial and personal use under the **Pixabay Content License**:
 
-### Chip Technology Computer (`images/chip-1280x839.jpg`)
+### Chip Technology Computer (`images/index/chip-1280x839.jpg`)
 
   - **Source**: [Pixabay](https://pixabay.com/photos/chip-technology-computer-4254845/)
 
@@ -210,7 +210,7 @@ and are free for commercial and personal use under the **Pixabay Content License
 
   - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
 
-### Source Code Software (`images/code-960x640.jpg`)
+### Source Code Software (`images/index/code-960x640.jpg`)
 
   - **Source**: [Pixabay](https://pixabay.com/photos/source-code-software-computer-4280758/)
 
