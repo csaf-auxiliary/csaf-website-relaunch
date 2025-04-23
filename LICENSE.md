@@ -181,6 +181,20 @@ The **Darker Grotesque** font is used in this project.
 
 - **Source**: [Google Fonts](https://fonts.google.com/specimen/Darker+Grotesque)
 
+## Font: Manrope
+
+The **Manrope** font is used in this project.
+
+- **Font Name**: Manrope
+
+- **Designed by**: Mikhail Sharanda
+
+- **Distributed by**: Google Fonts
+
+- **License**: [SIL Open Font License 1.1](https://opensource.org/license/OFL-1.1)
+
+- **Source**: [Google Fonts](https://fonts.google.com/specimen/Manrope)
+
 ## Images Under Pixabay Content License
 
 The following images are sourced from Pixabay
