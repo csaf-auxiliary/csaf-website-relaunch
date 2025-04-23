@@ -32,16 +32,8 @@
       grid-row: 2;
     }
 
-    .btn-outline-primary {
-      &:hover {
-        background-color: lighten($primary, 66.5%);
-        color: $secondary;
-      }
-    }
-
     .btn {
       font-weight: 550;
-      transition: $transition-fast;
     }
   }
 

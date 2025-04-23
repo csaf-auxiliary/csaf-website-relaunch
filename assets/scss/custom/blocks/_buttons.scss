@@ -1,0 +1,22 @@
+.btn {
+  transition: $transition-fast;
+}
+
+.btn-outline-primary {
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible,
+  &:target {
+    background-color: lighten($primary, 66.5%) !important;
+    color: $secondary !important;
+    background: none;
+  }
+}
+
+.btn-sm-100 {
+  @include media-breakpoint-down(md) {
+    display: block;
+    width: 100%;
+  }
+}
