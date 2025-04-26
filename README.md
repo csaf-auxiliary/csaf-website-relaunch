@@ -247,10 +247,23 @@ At this stage is needed to handle base url that is not the site root.
 Goldmark Parser is the tool that turns written content from the markdown files
 into the final format that appears on the website.
 
-For processing the text,
-**[markup.goldmark.renderer] unsafe = true** setting is applied.
-It makes it possible to wrap the Markdown content in the .md files
-(specifically, tools.md) with extra HTML for styling.
+For processing the text, the following settings are applied:
+**[markup.goldmark.renderer]:**
+
+- **unsafe = true:** It makes it possible to wrap the Markdown content
+  in the .md files (specifically, tools.md) with extra HTML for styling.
+
+**[markup.goldmark.extensions]:**
+
+- **table = true:** Allows rendering markdown tables as <table> elements.
+
+**[markup.goldmark.parser]:**
+
+- **autoHeadingID = true:** Automatically generates `id` on every <h1>–<h6>
+  (only for content rendered automatically from markdown).
+
+- **autoHeadingIDType = "github":** Generates `id`s as lowercase,
+  dash-separated slugs (GitHub style).
 
 ## License
 
