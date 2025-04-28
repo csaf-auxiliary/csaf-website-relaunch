@@ -1,0 +1,96 @@
+---
+title: '{{ replace .Name "-" " " | title }} {{ path.Base .File.Dir }}'
+weight: 1
+draft: true
+
+params:
+  event:
+    dates: ''
+    location: ''
+  render:
+    images:
+      preview: '/images/events/default/community_days.png'
+      header: ''
+---
+
+<!--
+  SPDX-License-Identifier: Apache-2.0
+
+  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+
+  This file is Free Software under the Apache-2.0 License
+  without warranty, see README.md and LICENSES/Apache-2.0.txt for details.
+-->
+
+`Note:`
+
+`This message is only for editors. Delete this block before publishing the page.`
+
+` To learn how to customize and style an event page, please see the instructions in the README file: `
+https://github.com/csaf-auxiliary/csaf-website-relaunch#add-a-page-for-the-event
+
+## Overview
+
+Event description.
+
+---
+
+## Program
+
+### CSAF Community Day 1
+
+| Time | Session | Speaker |
+| --- | --- | --- |
+| 13:30 - 13:45 CET | {{< internal-link "Welcome & Keynote" >}} | Justin Murphy (CISA) |
+
+## Location
+
+Information Security Hub at Munich Airport (Südallee 1, 85356 München, Germany)
+
+{{< open-street-maps "48.350442,11.774101" >}}
+
+## Registration for In-Person Attendance
+
+To attend the CSAF Community Days {{ path.Base .File.Dir }} in person, please register by sending an
+email to [csaf@bsi.bund.de](mailto:csaf@bsi.bund.de). We look forward to
+welcoming you to Munich!
+
+{{< register-button >}}
+
+## Webex Details
+
+---
+
+{{< session-card >}}
+
+### CSAF Community Days {{ path.Base .File.Dir }} Day 1
+
+**Date and time:**
+
+**Join link:**
+
+**Webinar number:**
+
+**Webinar password:**
+
+**Join by phone:**
+
+**Access code:**
+
+{{< /session-card >}}
+
+---
+
+## Sessions
+
+{{< session-card >}}
+
+### Welcome & Keynote
+
+#### Speaker:
+
+**Abstract:**
+
+**Bio:**
+
+{{< /session-card >}}
