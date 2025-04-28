@@ -7,7 +7,7 @@
 
 languageCode = 'en-US'
 title = 'CSAF'
-disableKinds = ["section", "taxonomy", "RSS", "sitemap"]
+disableKinds = ["taxonomy", "RSS", "sitemap"]
 ignoreFiles = [".license$"]
 canonifyURLs = "true"
 

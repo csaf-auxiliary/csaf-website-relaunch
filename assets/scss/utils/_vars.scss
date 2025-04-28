@@ -36,11 +36,13 @@ $blue-800: #13294b;
 $blue-600: #1d3f74;
 $blue-400: #0053a1;
 $blue-350: #0060bb;
+$gray-900: #25292c;
+$gray-800: #363c40;
 $gray-600: #6c757d;
 $gray-400: #ced4da;
 $gray-100: #f8f9fa;
-$orange: #ce681f;
-$muted: #426e97;
+$orange:   #ce681f;
+$muted:    #426e97;
 
 $primary:       $blue-600;
 $secondary:     $blue-400;
@@ -52,7 +54,7 @@ $accent:        $orange;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
-  "tertiary":  $tertiary,
-  "light":  $light,
-  "accent":  $accent,
+  "tertiary":   $tertiary,
+  "light":      $light,
+  "accent":     $accent,
 );

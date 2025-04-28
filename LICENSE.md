@@ -220,6 +220,31 @@ and are free for commercial and personal use under the **Pixabay Content License
 
   - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
 
+## Images Under Freepik License
+
+The following images are sourced from Freepik
+and are free for commercial and personal use under the **Freepik License**:
+
+### Flat design ssl illustration (`images/events/default/2024/workshop.png`)
+
+  - **Source**: [Freepik](https://www.freepik.com/free-vector/flat-design-ssl-illustration_22112343.htm)
+
+  - **License**: [Freepik License](https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement)
+
+  - **Author**: [rawpixel.com](https://www.freepik.com/author/rawpixel-com)
+
+  - **Distributed by**: [Freepik Company S.L.](https://www.freepik.com/)
+
+### Business people with connection icons (`images/events/default/2024/community_days.png`)
+
+  - **Source**: [Freepik](https://www.freepik.com/free-vector/business-people-with-connection-icons_3585358.htm)
+
+  - **License**: [Freepik License](https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement)
+
+  - **Author**: [freepik](https://www.freepik.com/author/freepik)
+
+  - **Distributed by**: [Freepik Company S.L.](https://www.freepik.com/)
+
 ## Icons Used in This Project
 
 ### GitHub Outline Fill Icon

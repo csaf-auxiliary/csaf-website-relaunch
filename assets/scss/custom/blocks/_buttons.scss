@@ -20,3 +20,18 @@
     width: 100%;
   }
 }
+
+.md-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
