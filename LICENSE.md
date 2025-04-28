@@ -220,6 +220,31 @@ and are free for commercial and personal use under the **Pixabay Content License
 
   - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
 
+### Checklist survey review computer (`images/events/2024/workshop/checklist-survey-review-computer.jpg`)
+
+  - **Source**: [Pixabay](https://pixabay.com/illustrations/checklist-survey-review-computer-7252443/)
+
+  - **License**: [Pixabay Content License](https://pixabay.com/service/terms/)
+
+  - **Author**: [David Jones](https://pixabay.com/users/aagraphics-27946333/)
+
+  - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
+
+## Images Under Unsplash License
+
+The following images are sourced from Unsplash
+and are free for commercial and personal use under the **Unsplash License**:
+
+### Person, die Trackpad verwendet (`images/events/2024/workshop/person-using-the-trackpad.jpg`)
+
+  - **Source**: [Unsplash](https://unsplash.com/de/fotos/person-die-trackpad-verwendet-P1qyEf1g0HU)
+
+  - **License**: [Unsplash License](https://unsplash.com/license)
+
+  - **Author**: [Glenn Carstens-Peters](https://unsplash.com/de/@glenncarstenspeters)
+
+  - **Distributed by**: [Unsplash Inc](https://unsplash.com/)
+
 ## Images Under Freepik License
 
 The following images are sourced from Freepik
