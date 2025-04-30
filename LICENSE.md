@@ -2,6 +2,11 @@
 
 This project contains multiple assets under different licenses. Please refer to the details below for proper attribution and compliance.
 
+## OASIS CSAF TC Assets
+The textual content of this website and the CSAF logo are
+the intellectual property of the OASIS CSAF Technical Committee (TC).
+All rights reserved.
+
 ## YouTube-Related Assets
 
 ### YouTube Branding Attribution
@@ -314,6 +319,8 @@ form the Hugo website and was adapted to suit this project requirements.
 
 - `csaf` is licensed as Free Software under the terms of the
   [Apache License, Version 2.0](./LICENSES/Apache-2.0.txt).
+
+- Text contents are Copyright OASIS CSAF TC - All Rights Reserved.
 
 - See the specific source files for details, the license itself
   can be found in the directory `LICENSES/`.

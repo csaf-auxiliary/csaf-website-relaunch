@@ -294,20 +294,19 @@ include `/static` in the file path.
 
 #### License Information
 
-At the top of every Markdown file, the license information is included.
-**Do not remove or modify this block.**
-Write your event content **below** the license section.
+Each Markdown file must begin with a license block.
+**Do not remove or move this block.**
+It ensures legal compliance and correct attribution.
+
+If needed, update the license details to reflect the actual license
+under which your content should be published.
 
 Example:
 
 ```markdown
 <!--
-  SPDX-License-Identifier: Apache-2.0
-
-  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
-
-  This file is Free Software under the Apache-2.0 License
-  without warranty, see README.md and LICENSES/Apache-2.0.txt for details.
+  SPDX-FileCopyrightText: 2025 OASIS CSAF TC
+  SPDX-License-Identifier: LicenseRef-OASIS-CSAF-TC-License
 -->
 ```
 
