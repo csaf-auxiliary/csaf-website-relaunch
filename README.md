@@ -148,9 +148,13 @@ Name the file in the format `<video-id>.jpg`.
 
 ```
 SPDX-License-Identifier: LicenseRef-YouTube-Standard-License
-SPDX-FileCopyrightText: Author: <channel-name-and-link>
-SPDX-FileCopyrightText: Distributor: YouTube, Inc. <https://www.youtube.com>
-Source: https://www.youtube.com/watch?v=<video-id>
+SPDX-FileCopyrightText: <channel-name-and-link>
+```
+
+Example:
+```
+SPDX-License-Identifier: LicenseRef-YouTube-Standard-License
+SPDX-FileCopyrightText: FIRST <https://www.youtube.com/channel/UCK3_z6YyWvfqrOuCmrfxsTw>
 ```
 
 Replace `<video-id>` and `<channel-name-and-link>` with the actual ones.
