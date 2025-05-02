@@ -159,7 +159,7 @@ Before starting the development server, ensure you have the following installed:
 
     - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if necessary.
 
-- **Node.js** (v14+) and **npm** (v6+, installed by default together with Node.js 14+):
+- **Node.js** (v20+) and **npm** (v10.8.2+, installed by default together with Node.js 20+):
   Required for managing project dependencies,
   such as the Bootstrap framework used for styling the pages.
 
