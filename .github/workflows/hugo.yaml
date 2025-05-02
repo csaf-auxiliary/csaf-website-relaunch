@@ -48,9 +48,6 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json ]] && npm ci || true"
 
-      - name: List Layouts and Partials
-        run: find layouts/partials -type f
-
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
