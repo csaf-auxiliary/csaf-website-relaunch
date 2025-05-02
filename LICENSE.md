@@ -225,7 +225,7 @@ and are free for commercial and personal use under the **Pixabay Content License
 
   - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
 
-### Checklist survey review computer (`images/events/2024/workshop/checklist-survey-review-computer.jpg`)
+### Checklist survey review computer (`images/events/workshops/2024/checklist-survey-review-computer.jpg`)
 
   - **Source**: [Pixabay](https://pixabay.com/illustrations/checklist-survey-review-computer-7252443/)
 
@@ -240,7 +240,7 @@ and are free for commercial and personal use under the **Pixabay Content License
 The following images are sourced from Unsplash
 and are free for commercial and personal use under the **Unsplash License**:
 
-### Person, die Trackpad verwendet (`images/events/2024/workshop/person-using-the-trackpad.jpg`)
+### Person, die Trackpad verwendet (`images/events/workshops/2024/person-using-the-trackpad.jpg`)
 
   - **Source**: [Unsplash](https://unsplash.com/de/fotos/person-die-trackpad-verwendet-P1qyEf1g0HU)
 
@@ -255,7 +255,7 @@ and are free for commercial and personal use under the **Unsplash License**:
 The following images are sourced from Freepik
 and are free for commercial and personal use under the **Freepik License**:
 
-### Flat design ssl illustration (`images/events/default/2024/workshop.png`)
+### Flat design ssl illustration (`images/events/default/workshop_list.png`)
 
   - **Source**: [Freepik](https://www.freepik.com/free-vector/flat-design-ssl-illustration_22112343.htm)
 
@@ -265,7 +265,7 @@ and are free for commercial and personal use under the **Freepik License**:
 
   - **Distributed by**: [Freepik Company S.L.](https://www.freepik.com/)
 
-### Business people with connection icons (`images/events/default/2024/community_days.png`)
+### Business people with connection icons (`images/events/default/community_days_list.png`)
 
   - **Source**: [Freepik](https://www.freepik.com/free-vector/business-people-with-connection-icons_3585358.htm)
 

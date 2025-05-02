@@ -1,13 +1,19 @@
 ---
-title: '{{ replace .Name "-" " " | title }} {{ path.Base .File.Dir }}'
+title: '{{ replace .Name "-" " " | title }}'
 weight: 1
+type: 'event'
 draft: true
 
 params:
   event:
     dates: ''
-    location: ''
+    location_long: ''
+    location_short: ''
+    year: {{ replace .Name "-" " " | title }}
   render:
+    lists:
+      display_in_lists: true
+      display_on_top: true
     images:
       preview: ''
       header: ''

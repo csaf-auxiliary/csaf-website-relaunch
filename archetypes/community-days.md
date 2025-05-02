@@ -1,15 +1,21 @@
 ---
-title: '{{ replace .Name "-" " " | title }} {{ path.Base .File.Dir }}'
-weight: 1
+title: 'Community Days {{ replace .Name "-" " " | title }}'
+weight: 2
+type: 'event'
 draft: true
 
 params:
   event:
     dates: ''
-    location: ''
+    location_long: ''
+    location_short: ''
+    year: {{ .Name }}
   render:
+    lists:
+      display_in_lists: true
+      display_on_top: true
     images:
-      preview: '/images/events/default/community_days.png'
+      preview: '/images/events/default/community_days_list.png'
       header: ''
 ---
 <!--

@@ -1,15 +1,21 @@
 ---
-title: '{{ replace .Name "-" " " | title }} {{ path.Base .File.Dir }}'
+title: 'Workshop {{ replace .Name "-" " " | title }}'
 weight: 1
+type: 'event'
 draft: true
 
 params:
   event:
     dates: ''
-    location: ''
+    location_long: ''
+    location_short: ''
+    year: {{ .Name }}
   render:
+    lists:
+      display_in_lists: true
+      display_on_top: true
     images:
-      preview: '/images/events/default/workshop.png'
+      preview: '/images/events/default/workshop_list.png'
       header: ''
 ---
 <!--

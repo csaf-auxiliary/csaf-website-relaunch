@@ -1,9 +1,6 @@
 ---
-title: 'Events'
-params:
-  events:
-    year: 2025
-layout: 'events-index'
+title: 'Community days'
+type: 'event'
 draft: true
 ---
 <!--

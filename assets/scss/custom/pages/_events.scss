@@ -69,6 +69,20 @@
   }
 }
 
+.event-mini-card {
+  color: #363c40;
+
+  &__list-item {
+    all: unset;
+  }
+
+  &__title {
+    color: #13294b;
+    font-weight: 600;
+    border-bottom: 1.5px solid #363c40;
+  }
+}
+
 .events-index {
   h2 {
     color: $gray-900;

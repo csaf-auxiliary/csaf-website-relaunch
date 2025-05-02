@@ -191,25 +191,47 @@ How to define the `<license-type>`:
 
 #### Folder and Website Sections Structure
 
-The `/events/` section of the website directly matches the structure
-of the [`/content/events/`](/content/events/) folder.
+The `/events/` section of the website contains the list of the events,
+pages of which are uploaded to the "/community-dats/" and "/workshops/"
+folders.
+The structure of the `/community-days/` and `/workshops/` website sections
+directly matches the structure of these folders.
 
 ---
 
 #### Managing Markdown Files
 
-To keep everything organized and make sure the event lists display correctly,
-group event pages by year.
+Hugo will automatically organize your event pages when you follow
+the [Creating New Event Pages](#creating-new-event-pages) steps.
+This keeps everything tidy and makes sure your event lists show up correctly
+on the site.
 
-Example folder structure:
+If you ever need to add or update an event file by hand,
+please follow these rules:
+
+**File Name**
+
+- Use the year of the event as the file name.
+
+- For example: `2024.md`
+
+**File Location**
+
+- Put each year’s file into the folder for its event type.
+
+- For example, a community days event in 2024 goes here:
+  `content/community-days/2024.md`
+
+Here’s what your folders might look like:
 
 ```
-content/events/
-├── 2024/
-│   ├── workshop.md
-│   ├── community-days.md
+content
+├─events.md
+├─community-days/
+│   ├── 2024.md
 │   └── ...
-└── 2025/
+└─workshops/
+    ├── 2024.md
     └── ...
 ```
 
@@ -217,16 +239,38 @@ content/events/
 
 #### Managing Images
 
-Images for event pages should be placed
-in the [`/static/images/events/`](/static/images/events/) folder.
+All event images go into the `static/images/events/` folder.
+You’ll see two subfolders there already:
 
-- Create a subfolder for each year.
-- Inside the year folder, create a separate folder for each event.
+- `community-days/`
 
-Example:
+- `workshops/`
+
+To organize images:
+
+1. **Create a Year Folder**:
+   Inside the appropriate event type folder make a new folder
+   named for the year.
+
+   * Example: `static/images/events/workshops/2025/`
+
+2. **Add Event Images**:
+   Inside the year folder, drop in all images for each individual event.
+
+Here’s how it might look:
 
 ```
-static/images/events/2025/workshop/
+static/
+└── images/
+  └── events/
+    ├── community-days/
+    │ └── 2025/
+    │   ├── header.png
+    │   └── image1.png
+    └── workshops/
+      └── 2025/
+        ├── header.png
+        └── image1.png
 ```
 
 When inserting images in your Markdown file, **do not**
@@ -235,63 +279,50 @@ include `/static` in the file path.
 ✅ Correct:
 
 ```
-![Image description](/images/events/2025/workshop/filename.png)
+![Image description](/images/events/workshops/2025/image1.png)
 ```
 
 🚫 Incorrect:
 
 ```
-![Image description](/static/images/events/2025/workshop/filename.png)
+![Image description](/static/images/events/workshops/2025/image1.png)
 ```
 
 ---
 
 #### Creating New Event Pages
 
-1. **Check if the year folder already exists.**
-   If it does not, create it first by generating the default year page:
+You can either start with a ready-to-use template or create a blank page.
 
-   ```
-   hugo new --kind=events-index events/<year>/_index.md
-   ```
+- **Using a template** (recommended for easier setup):
 
-   Example:
+  ```
+  hugo new <event-type>/<year>.md
+  ```
 
-   ```
-   hugo new --kind=events-index events/2025/_index.md
-   ```
+  Available event types: `workshops`, `community-days`.
 
-2. **Create a new event page.**
-   You can either start with a ready-to-use template or create a blank page.
+  Examples:
 
-   - **Using a template** (recommended for easier setup):
+  ```
+  hugo new workshops/2025.md
+  hugo new community-days/2025.md
+  ```
 
-     ```
-     hugo new --kind=<template> events/<year>/<event>.md
-     ```
+- **Starting with an empty page:**
 
-     Available templates: `workshop`, `cdays`.
+  ```
+  hugo new --kind=event <event-type>/<year>.md
+  ```
 
-     Examples:
+  Example:
 
-     ```
-     hugo new --kind=workshop events/2025/workshop.md
-     hugo new --kind=cdays events/2025/community-days.md
-     ```
+  ```
+  hugo new --kind=event workshops/2025-munich.md
+  ```
 
-   - **Starting with an empty page:**
+> **Important:** Use hyphens (`-`) if you need separate words in filenames.
 
-     ```
-     hugo new events/<year>/<event>.md
-     ```
-
-     Example:
-
-     ```
-     hugo new events/2025/workshop-munich.md
-     ```
-
-> **Important:** Use hyphens (`-`) to separate words in filenames.
 > All event files must use the `.md` file extension.
 
 ---
@@ -319,6 +350,7 @@ Example:
 #### Front Matter Parameters
 
 Each event page begins with technical information called **front matter**.
+These help control how the page looks and where it appears.
 
 Example:
 
@@ -326,52 +358,229 @@ Example:
 ---
 title: 'Workshop 2024'
 weight: 1
+type: 'event'
 draft: true
 
 params:
   event:
     dates: 'December 9-12, 2024'
-    location: 'Germany, Information Security Hub at Munich Airport (Südallee 1, 85356 München, Germany)'
+    location_long: 'Germany, Information Security Hub at Munich Airport (Südallee 1, 85356 München, Germany)'
+    location_short: 'München, Germany'
+    year: 2024
   render:
+    lists:
+      display_in_lists: true
+      display_on_top: true
     images:
-      preview: '/images/events/default/workshop.png'
-      header: '/images/events/2024/workshop/person-using-the-trackpad.jpg'
+      preview: '/images/events/default/workshop_list.png'
+      header: '/images/events/workshops/2024/person-using-the-trackpad.jpg'
 ---
 ```
 
-**Parameter Description**
+##### Required Settings
 
-- **`title`** (required)
-  Displayed as the event page title, header, and in event lists.
-  Default: filename + year (from folder name).
-  You can set a custom title freely.
+Required parameters **must not** be empty.
 
-- **`weight`** (optional)
-  Controls the order of events in event lists.
-  Lower weight = higher on the list.
-  Default: `1`.
-  [Learn more about the events order](#changing-the-order-of-events-in-lists).
+- **`title`**
+  It will be shown at the top of the event page and in event lists.
 
-- **`draft`** (required)
-  Defines whether the page is published.
-  Default: `true` (not published).
-  Set to `false` to publish the page.
+  - If you generate an event page from a template,
+    it will have the event type and the year as a default title.
 
-- **`params.event.dates` and `params.event.location`** (required)
-  Information displayed on the event page.
-  For upcoming events, also shown on event cards on the `/events/` page.
+  - You can write a custom title anytime.
 
-- **`params.render.images.preview`** (optional)
-  Image shown on event cards.
-  If not provided, the card will not have an image.
+- **`layout`**
+  *Please don’t change this!*
 
-- **`params.render.images.header`** (optional)
-  Header background image on the event page.
-  If not provided, a default blue-black gradient will be used.
+  - It’s a technical setting that tells Hugo how to build the page.
 
-> **Important:**
-> Required parameters **must not** be empty.
-> Optional parameters can be deleted if not needed.
+- **`draft`**
+  Controls whether the event is published on the website.
+
+  - `true` = hidden (not published)
+
+  - `false` = visible (published).
+
+  Set to `false` when the event is ready to go live.
+
+- **`params.event.dates`**
+  The event’s date.
+
+  - It will appear on the page and in event lists.
+
+- **`params.event.location_long`**
+  The full location name.
+
+  - Shown on the event page.
+
+  - Example: `Information Security Hub at Munich Airport (Südallee 1, 85356 München, Germany)`
+
+- **`params.event.location_short`**
+  A shorter location name.
+
+  - Shown in event lists.
+
+  - Example: `'München, Germany'`
+
+---
+
+##### **Optional Settings**
+
+- **`weight`**
+  Controls the order of events in lists.
+
+  - Lower numbers appear higher on the list.
+
+  - Default is `1`.
+
+  [More about changing event order](#changing-the-order-of-events-in-lists)
+
+- **`params.render.images.preview`**
+  A preview image for the event card shown on the main `/events/` page.
+
+  - If not added, the card will not have an image.
+
+- **`params.render.images.header`**
+  The big header background image at the top of the event page.
+
+  - If not added, a blue-black gradient will be used.
+
+- **`params.render.lists.display_in_lists`**
+  Should this event appear in the list pages
+  (`/events/`, `/workshops/`, `community-days`)?
+
+  - `true` = show in the lists
+
+  - `false` or not set = not shown in the lists
+
+  ⚠️ This does not control whether the page is live —
+    it just hides or shows it in the list views.
+    To publish or unpublish, use the `draft` setting.
+
+- **`params.render.lists.display_on_top`**
+  Do you want the event to appear in a large card
+  at the top of the `/events/` page?
+
+  - `true` = featured at the top
+
+  - `false` or not set = shown in the “Previous Events” section
+
+⚠️ This setting only affects how the event is displayed —
+not whether it is listed at all.
+Use `display_in_lists` (above) to include it in the list.
+
+---
+
+#### Event information visibility
+
+Published events can be visible on the following pages:
+
+- The event page (for Example `/workshops/2024/`)
+
+- List pages `/events/` and `/workshops/` or `/community-days/`
+depending on the folder where event file is uploaded.
+
+Page visibility is defined on the top of its .md-file.
+
+To **unpublish** an event or year page (hide it completely), set:
+
+  ```yaml
+  draft: true
+  ```
+
+This will remove the page from all the list pages and make it not accessible
+by its direct URL.
+
+**To hide a link to the event from the lists** without unpublishing its page,
+set:
+
+  ```yaml
+  params:
+    ...
+    render:
+      lists:
+        display_in_lists: true
+  ```
+
+This will remove the page from all the list pages,
+but it can still be found by its direct URL.
+
+---
+
+#### **How to Feature an Event at the Top of the Events Page**
+
+The `/events/` page has **two sections**:
+
+1. **Highlighted Events** – Big cards shown at the top of the page
+
+2. **Previous Events** – Regular event list shown below
+
+To choose **where** your event appears, adjust this setting
+at the top of the event’s `.md` file:
+
+**To Feature the Event at the Top (Highlighted)**
+
+Change `display_on_top` to `true`:
+
+```yaml
+---
+params:
+  render:
+    lists:
+      display_on_top: true
+---
+```
+
+This will display the event as a **large card at the top** of the `/events/`
+page.
+
+**To Show It in the “Previous events” Section**
+
+Change `display_on_top` to `false`:
+
+```yaml
+---
+params:
+  render:
+    lists:
+      display_on_top: false
+---
+```
+
+This will place the event **in the regular list** under "Previous events"
+headline.
+
+---
+
+#### Changing the Order of Events in Lists
+
+Events are sorted based on two parameters from the front matter:
+
+- **Year** Newer events appear first.
+
+- **Weight:** Pages with lower numbers appear first.
+
+- **Title:** If Weight is the same (or missing), events
+are sorted alphabetically by title.
+
+**Default behavior:**
+All events have a default weight of `1`.
+This means they are normally sorted by their years and then - by titles.
+
+**To change the order manually:**
+Set a different weight at the top of the event page file:
+
+```yaml
+---
+weight: 2
+---
+```
+
+- Lower weight → Higher in the list.
+
+- Higher weight → Lower in the list.
+
+- 0 → Below all the other numbers within the same year.
 
 ---
 
@@ -505,101 +714,7 @@ draft: false
 ---
 ```
 
-This will make the page accessible to users and automatically add it
-to the navigation and event lists.
-
----
-
-#### Managing Event Lists
-
-Event lists are created automatically from the content
-inside the `/content/events/` folder.
-
-#### Structure of the `/events/` List Page
-
-The `/events/` page has two main sections:
-
-1. **Upcoming Events**
-   Displays cards for upcoming events.
-   These events are defined at the top
-   of the `/content/events/_index.md` file:
-
-    ```yaml
-    ---
-    params:
-      events:
-        year: <year>
-    ---
-    ```
-
-2. **Previous Events**
-   Displays links to all other published
-   (and [not excluded](#controlling-what-appears-on-event-lists))
-   event pages.
-
----
-
-#### Changing the Order of Events in Lists
-
-Events are sorted based on two parameters from the front matter:
-
-- **Weight:** Pages with lower numbers appear first.
-- **Title:** If Weight is the same (or missing), events
-are sorted alphabetically by title.
-
-**Default behavior:**
-All events have a default weight of `1`.
-This means they are normally sorted by their titles.
-
-**To change the order manually:**
-Set a different weight at the top of the event page file:
-
-```yaml
----
-weight: 2
----
-```
-
-- Lower weight → Higher in the list.
-- Higher weight → Lower in the list.
-- 0 → Below all the other numbers.
-
----
-
-#### Controlling What Appears on Event Lists
-
-By default, all published events are visible on:
-
-- `/events/`
-- `/events/<year>/`
-
-**If you want to hide a page from the lists:**
-
-- To **unpublish** an event or year page (hide it completely), set:
-
-    ```yaml
-    draft: true
-    ```
-
-- To **hide a whole year** from the `/events/` page
-(without unpublishing the events):
-
-  1. Open the `_index.md` file for that year
-  (`/content/events/<year>/_index.md`).
-
-  2. Add this to the top:
-
-    ```yaml
-    ---
-    params:
-      render:
-        exclude: true
-    ---
-    ```
-
-**Important:**
-Events and year pages that are excluded this way will **still be accessible**
-via direct URL.
+This will make the page accessible to users.
 
 ---
 

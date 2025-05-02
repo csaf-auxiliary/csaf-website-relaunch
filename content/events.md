@@ -1,13 +1,9 @@
 ---
-title: 'Events 2024'
-weight: 1
-draft: true
-
+title: 'Events'
 params:
   events:
-    year: 2024
-  render:
-    exclude: false
+    year: 2025
+layout: 'events'
 draft: true
 ---
 <!--
