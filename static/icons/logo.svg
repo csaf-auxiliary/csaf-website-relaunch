@@ -1,3 +1,8 @@
+<!-- SPDX-SnippetBegin -->
+<!--
+  SPDX-SnippetCopyrightText: 2025 OASIS CSAF TC
+  SPDX-License-Identifier: LicenseRef-OASIS-CSAF-TC-License
+-->
 <svg
   xmlns="http://www.w3.org/2000/svg"
   viewBox="0 0 3833.000000 1283.000000"
@@ -79,3 +84,4 @@
     -2145 19 -2028 0 -2106 -1 -2146 -19z"/>
   </g>
 </svg>
+<!-- SPDX-SnippetEnd -->
