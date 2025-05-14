@@ -317,10 +317,5 @@ form the Hugo website and was adapted to suit this project requirements.
 
 ## General License Notice
 
-- `csaf` is licensed as Free Software under the terms of the
-  [Apache License, Version 2.0](./LICENSES/Apache-2.0.txt).
-
-- Text contents are Copyright OASIS CSAF TC - All Rights Reserved.
-
-- See the specific source files for details, the license itself
+- See the specific source files for details, the license text itself
   can be found in the directory `LICENSES/`.

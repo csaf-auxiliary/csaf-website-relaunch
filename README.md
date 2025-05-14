@@ -12,11 +12,10 @@
 
 This website provides information and resources
 about the Common Security Advisory Framework (CSAF).
-It helps organizations create, distribute, and consume
+CSAF helps organizations to create, distribute, and consume
 security advisories in a structured, machine-readable format.
 
-Built with Hugo and styled using Bootstrap, the site offers a clean and
-accessible way to explore CSAF-related content.
+Built with Hugo and styled using Bootstrap.
 
 For more details about CSAF,
 visit the [OASIS CSAF Technical Committee](https://www.oasis-open.org/committees/csaf/charter.php).
@@ -128,8 +127,8 @@ The site will be accessible at http://localhost:1313/.
 
 - **LICENSE.md**: an overview over the licences of the used components;
 
-- **LICENSES/**: Contains any additional licensing information for dependencies
-  or components used;
+- **LICENSES/**: Contains the license texts, that are referred to from
+  licensing headers or files.
 
 - **package.json** and **package-lock.json**: Manages Node.js dependencies;
 
