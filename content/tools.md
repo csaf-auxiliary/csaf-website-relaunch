@@ -105,6 +105,6 @@ A Rust implementation of the CSAF standard. It supports parsing (and partial val
 {{% /card %}}
 
 {{% card %}}
-#### [DependencyTrack CSAF Integration](https://github.com/csaf-sbom/hyades-csaf)
+### [DependencyTrack CSAF Integration](https://github.com/csaf-sbom/hyades-csaf)
 An integration for the popular dependency management system DependencyTrack.
 {{% /card %}}
