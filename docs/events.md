@@ -202,7 +202,7 @@ Required parameters **must not** be empty.
 
   - You can write a custom title anytime.
 
-- **`layout`**
+- **`type`**
   *Please don’t change this!*
 
   - It’s a technical setting that tells Hugo how to build the page.
