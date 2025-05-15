@@ -1,3 +1,7 @@
+<!--
+  SPDX-License-Identifier: Apache-2.0
+  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+-->
 <ul class="navbar-nav">
   {{ range .Site.Data.navlinksInternal }}
     {{ partial "general/navbar-link.html" (dict "link" . "page" $.Page) }}

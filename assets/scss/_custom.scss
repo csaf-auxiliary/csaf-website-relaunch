@@ -1,8 +1,15 @@
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+
 @import 'custom/blocks/backgrounds';
+@import 'custom/blocks/buttons';
 @import 'custom/blocks/links';
+@import 'custom/blocks/markdown';
 @import 'custom/blocks/navbar';
 @import 'custom/blocks/positioning';
+@import 'custom/blocks/text';
 @import 'custom/blocks/youtube';
+@import 'custom/pages/events';
 @import 'custom/pages/index';
 @import 'custom/pages/specifications';
 @import 'custom/pages/tools';
