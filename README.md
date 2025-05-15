@@ -145,7 +145,8 @@ To run the Hugo development server with live reload, follow these steps:
 
 Before starting the development server, ensure you have the following installed:
 
-- **Hugo**: Required for generating the static website from the source code files.
+- **Hugo** (v0.145.0 or later, extended edition):
+  Required for generating the static website from the source code files.
 
     - Check if Hugo is installedby running `hugo version` in the terminal.
 
@@ -158,7 +159,8 @@ Before starting the development server, ensure you have the following installed:
 
     - [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if necessary.
 
-- **Node.js and npm**: Required for managing project dependencies,
+- **Node.js** (v20+) and **npm** (v10.8.2+, installed by default together with Node.js 20+):
+  Required for managing project dependencies,
   such as the Bootstrap framework used for styling the pages.
 
     - Check if Node.js and npm are installed by running `node -v` and
