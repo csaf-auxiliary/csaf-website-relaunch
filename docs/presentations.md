@@ -27,7 +27,7 @@ and insert a new block like this:
 Name the file in the format `<video-id>.jpg`.
 
 3. Add the file to the
-   [static/images/youtube_covers/](static/images/youtube_covers/) folder.
+   [static/youtube_covers/](static/youtube_covers/) folder.
 
 4. In the same folder create a file with the name `<video-id>.jpg.license`
    and provide the licensing information in this format:

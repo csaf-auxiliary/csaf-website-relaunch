@@ -48,55 +48,71 @@ content
 
 ---
 
-### Managing Images
+### Managing Images and Downloadable files
 
-All event images go into the `static/images/events/` folder.
+All event images and files for downloading by users
+go into the `static/events/` folder.
 You’ll see two subfolders there already:
 
 - `community-days/`
 
 - `workshops/`
 
-To organize images:
+To organize files:
 
 1. **Create a Year Folder**:
    Inside the appropriate event type folder make a new folder
    named for the year.
 
-   * Example: `static/images/events/workshops/2025/`
+   * Example: `static/events/workshops/2025/`
 
 2. **Add Event Images**:
    Inside the year folder, drop in all images for each individual event.
+
+3. **Upload downloadable files**:
+   If you want to upload files to share with the users, create a dedicated
+   folder `download` inside of the year folder and upload such files there.
+
+   * Example: `static/events/workshops/2025/download/`
 
 Here’s how it might look:
 
 ```
 static/
-└── images/
-  └── events/
-    ├── community-days/
-    │ └── 2025/
-    │   ├── header.png
-    │   └── image1.png
-    └── workshops/
-      └── 2025/
-        ├── header.png
-        └── image1.png
+└── events/
+  ├── community-days/
+  │ └── 2025/
+  │   ├── downloads/
+  │   │   ├── event_program.pdf
+  │   │   └── presentation.odp
+  │   ├── header.png
+  │   └── image1.png
+  └── workshops/
+    └── 2025/
+  │   ├── downloads/
+  │   │   ├── event_program.pdf
+  │   │   └── presentation.odp
+      ├── header.png
+      └── image1.png
 ```
 
-When inserting images in your Markdown file, **do not**
-include `/static` in the file path.
+When inserting images or links to the downloadable files
+in your Markdown file, **do not** include `/static` in the file path.
 
 ✅ Correct:
 
 ```
-![Image description](/images/events/workshops/2025/image1.png)
+![Image description](/events/workshops/2025/image1.png)
+
+[Download the program](/events/workshops/2025/download/event_program.pdf)
 ```
 
 🚫 Incorrect:
 
 ```
-![Image description](/static/images/events/workshops/2025/image1.png)
+![Image description](/static/events/workshops/2025/image1.png)
+
+[Download the program](/static/events/workshops/2025/download/event_program.pdf)
 ```
 
 ---
@@ -185,8 +201,8 @@ params:
       display_in_lists: true
       display_on_top: true
     images:
-      preview: '/images/events/default/workshop_list.png'
-      header: '/images/events/workshops/2024/person-using-the-trackpad.jpg'
+      preview: '/events/default/workshop_list.png'
+      header: '/events/workshops/2024/person-using-the-trackpad.jpg'
 ---
 ```
 
@@ -420,7 +436,7 @@ Example:
 
 ```markdown
 {{< text-and-image >}}
-![image](/images/events/<year>/<event-name>/<filename>)
+![image](/events/<year>/<event-name>/<filename>)
 
 Markdown text.
 {{< /text-and-image >}}

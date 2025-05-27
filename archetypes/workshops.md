@@ -15,7 +15,7 @@ params:
       display_in_lists: true
       display_on_top: true
     images:
-      preview: '/images/events/default/workshop_list.png'
+      preview: '/events/default/workshop_list.png'
       header: ''
 ---
 <!--
@@ -33,7 +33,7 @@ https://github.com/csaf-auxiliary/csaf-website-relaunch#add-a-page-for-the-event
 {{< register-button >}}
 
 {{< text-and-image >}}
-![image](/images/events/<year>/<event-name>/<filename>)
+![image](/events/<year>/<event-name>/<filename>)
 
 Markdown text.
 {{< /text-and-image >}}
