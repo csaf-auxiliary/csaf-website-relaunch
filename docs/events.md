@@ -82,14 +82,14 @@ static/
 └── events/
   ├── community-days/
   │ └── 2025/
-  │   ├── downloads/
+  │   ├── download/
   │   │   ├── event_program.pdf
   │   │   └── presentation.odp
   │   ├── header.png
   │   └── image1.png
   └── workshops/
     └── 2025/
-  │   ├── downloads/
+  │   ├── download/
   │   │   ├── event_program.pdf
   │   │   └── presentation.odp
       ├── header.png
