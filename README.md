@@ -166,11 +166,12 @@ For processing the text, the following settings are applied:
 
 **[markup.goldmark.extensions]:**
 
-- **table = true:** Allows rendering markdown tables as <table> elements.
+- **table = true:** Allows rendering markdown tables as `<table>` elements.
 
 **[markup.goldmark.parser]:**
 
-- **autoHeadingID = true:** Automatically generates `id` on every <h1>–<h6>
+- **autoHeadingID = true:** Automatically generates `id`
+  on every `<h1>` – `<h6>`
   (only for content rendered automatically from markdown).
 
 - **autoHeadingIDType = "github":** Generates `id`s as lowercase,
