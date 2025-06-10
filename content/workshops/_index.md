@@ -1,7 +1,7 @@
 ---
 title: 'Workshops'
 type: 'event'
-draft: true
+draft: false
 ---
 <!--
   SPDX-FileCopyrightText: 2025 OASIS CSAF TC

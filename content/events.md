@@ -4,7 +4,7 @@ params:
   events:
     year: 2025
 layout: 'events'
-draft: true
+draft: false
 ---
 <!--
   SPDX-FileCopyrightText: 2025 OASIS CSAF TC
