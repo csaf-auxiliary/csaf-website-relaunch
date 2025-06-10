@@ -12,14 +12,15 @@
 
 This website provides information and resources
 about the Common Security Advisory Framework (CSAF).
-It helps organizations create, distribute, and consume
+CSAF helps organizations to create, distribute, and consume
 security advisories in a structured, machine-readable format.
 
-Built with Hugo and styled using Bootstrap, the site offers a clean and
-accessible way to explore CSAF-related content.
+Built with Hugo and styled using Bootstrap.
 
 For more details about CSAF,
 visit the [OASIS CSAF Technical Committee](https://www.oasis-open.org/committees/csaf/charter.php).
+
+---
 
 ## Deployment
 
@@ -40,102 +41,7 @@ The website is built and deployed automatically via GitHub Actions.
 
 No manual deployment is required. Changes go live once reviewed and merged.
 
-### How to update the website content
-
-#### Add a new tool
-
-If you want to add a new CSAF tool,
-open [content/tools.md](content/tools.md?plain=1) with the text editor.
-
-Add a section with markdown as content like in this example
-(place information about the tool in markdown
-between `{{% card %}}` and `{{% /card %}}`):
-
-```markdown
-{{% card %}}
-### [CSAF Downloader](https://github.com/gocsaf/csaf/blob/main/docs/csaf_downloader.md)
-A tool to download CSAF content from a specific domain / CSAF provider.<br>
-{{% /card %}}
-```
-
-Then open a pull request to the main branch of this repository
-as suggested by [Github](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).
-
-#### Update "Specifications" page
-
-If you want to change the text or button on the "Specifications" page,
-open the [content/specifications.md](content/specification.md?plain=1) file,
-change the HTML there and then open a pull request.
-
-#### Add a link to a new presentation video
-
-If you want to add a presentation, there is more work for privacy reasons:
-
-Using a YouTube video cover (a static image with a link)
-instead of embedding the video
-prevents YouTube from automatically loading tracking scripts, cookies,
-and third-party requests when a visitor opens the page.
-
-This ensures that no user data is sent to Google (YouTube's parent company)
-until the user explicitly clicks on the link to watch the video.
-
-Follow these steps to **add new presentation**
-(in all the steps insert the id of the video instead of the `<video-id>`):
-
-1. Open the [data/presentations.json](data/presentations.json) file,
-and insert a new block like this:
-
-```
-    ,
-    {
-        "link": <video-id>
-    }
-```
-
-2. Make a screenshot of the video or get a custom video cover.
-Name the file in the format `<video-id>.jpg`.
-
-3. Add the file to the
-   [static/images/youtube_covers/](static/images/youtube_covers/) folder.
-
-4. In the same folder create a file with the name `<video-id>.jpg.license`
-   and provide the licensing information in this format:
-
-```
-SPDX-License-Identifier: LicenseRef-YouTube-Standard-License
-SPDX-FileCopyrightText: Author: <channel-name-and-link>
-SPDX-FileCopyrightText: Distributor: YouTube, Inc. <https://www.youtube.com>
-Source: https://www.youtube.com/watch?v=<video-id>
-```
-
-Replace `<video-id>` and `<channel-name-and-link>` with the actual ones.
-
-
-5. Insert the licensing information to the
-[LICENSE](LICENSE.md#video-thumbnails-attribution) file in this format:
-
-```
-### Thumbnail <number-of-the-new-file>
-- **Link Source**: [YouTube](https://www.youtube.com/watch?v=<video-id>)
-- **License**: <license-type>
-- **Author**: [<channel-name>](https://www.youtube.com/channel/<channel-id>)
-- **Distributor**: [YouTube, Inc.](https://www.youtube.com)
-- **Video ID**: <video-id>
-```
-
-replace `<number-of-the-new-file>`, `<<video-id>`, `<license-type>`,
-`<channel-name>` and `<channel-id>` with the actual data.
-
-How to define the `<license-type>`:
-
-- If video description contains the label
-  "Creative Commons Attribution license (reuse allowed)",
-  insert `[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)`
-
-- Otherwise insert `[YouTube Content License](https://www.youtube.com/t/terms)`
-
-6. Open a pull request.
-
+---
 
 ## Development server (with live reload)
 
@@ -199,6 +105,8 @@ hugo server -D
 
 The site will be accessible at http://localhost:1313/.
 
+---
+
 ## Directory structure
 
 - **assets**: Contains the files that are being pre-processed
@@ -219,11 +127,12 @@ The site will be accessible at http://localhost:1313/.
 
 - **LICENSE.md**: an overview over the licences of the used components;
 
-- **LICENSES/**: Contains any additional licensing information for dependencies
-  or components used;
+- **LICENSES/**: Contains the license texts, that are referred to from
+  licensing headers or files.
 
 - **package.json** and **package-lock.json**: Manages Node.js dependencies;
 
+---
 
 ## Project Settings Defined in `hugo.toml`
 
@@ -249,10 +158,38 @@ At this stage is needed to handle base url that is not the site root.
 Goldmark Parser is the tool that turns written content from the markdown files
 into the final format that appears on the website.
 
-For processing the text,
-**[markup.goldmark.renderer] unsafe = true** setting is applied.
-It makes it possible to wrap the Markdown content in the .md files
-(specifically, tools.md) with extra HTML for styling.
+For processing the text, the following settings are applied:
+**[markup.goldmark.renderer]:**
+
+- **unsafe = true:** It makes it possible to wrap the Markdown content
+  in the .md files (specifically, tools.md) with extra HTML for styling.
+
+**[markup.goldmark.extensions]:**
+
+- **table = true:** Allows rendering markdown tables as `<table>` elements.
+
+**[markup.goldmark.parser]:**
+
+- **autoHeadingID = true:** Automatically generates `id`
+  on every `<h1>` – `<h6>`
+  (only for content rendered automatically from markdown).
+
+- **autoHeadingIDType = "github":** Generates `id`s as lowercase,
+  dash-separated slugs (GitHub style).
+
+---
+
+## How to Update the Website Content
+
+- [Tools](/docs/tools.md)
+
+- [Specifications](/docs/specifications.md)
+
+- [Presentations](/docs/presentations.md)
+
+- [Events](/docs/events.md)
+
+---
 
 ## License
 

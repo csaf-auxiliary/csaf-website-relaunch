@@ -1,10 +1,13 @@
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+
 .page-specifications {
   &__container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg)  {
       display: grid;
       grid-template-columns: 300px 1fr;
       grid-template-rows: auto auto;
@@ -14,7 +17,7 @@
   }
 
   &__headers {
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg)  {
       grid-column: 1 / -1;
       grid-row: 1;
     }
@@ -25,30 +28,22 @@
     flex-direction: row;
     gap: 20px;
 
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg)  {
       flex-direction: column;
       gap: 1rem;
       grid-column: 1;
       grid-row: 2;
     }
 
-    .btn-outline-primary {
-      &:hover {
-        background-color: lighten($primary, 66.5%);
-        color: $secondary;
-      }
-    }
-
     .btn {
       font-weight: 550;
-      transition: $transition-fast;
     }
   }
 
   &__text {
     font-weight: 450;
 
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg)  {
       grid-column: 2;
       grid-row: 2;
     }

@@ -1,0 +1,19 @@
+<!--
+  SPDX-License-Identifier: Apache-2.0
+  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+-->
+{{ $events := . }}
+
+<ul class="p-0 event-mini-card">
+{{ range sort $events "Params.event.year" "desc" "Weight" "Title" }}
+  {{ $event := . }}
+  <li class="event-mini-card__list-item">
+    <div class="mb-4">
+      <h3 class="event-mini-card__title">{{ $event.Title }}</h3>
+        <a href="{{ .RelPermalink }}">{{ .Permalink }}</a>
+        <p class="m-0">{{ $event.Params.event.location_short }}</p>
+        <p class="m-0">{{ $event.Params.event.dates }}</p>
+      </div>
+  </li>
+  {{ end }}
+</ul>

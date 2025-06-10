@@ -1,6 +1,9 @@
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+
 .index {
   &__container {
-    @media (min-width: $bp-xxl) {
+    @include media-breakpoint-up(xxl) {
       max-width: 1112px;
     }
   }
@@ -9,7 +12,7 @@
     width: 100%;
     padding: 4rem 0;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-                url(../images/chip-1280x839.jpg) center/cover no-repeat;
+                url(../index/chip-1280x839.jpg) center/cover no-repeat;
     display: block;
   }
 
@@ -44,23 +47,23 @@
   background-color: white;
   border-bottom: 2px solid $accent;
 
-  @media (min-width: $bp-xl) {
+  @include media-breakpoint-up(xl) {
     letter-spacing: 0.5px;
     padding-inline: 12px;
   }
 
-  @media (min-width: $bp-lg) {
+  @include media-breakpoint-up(lg) {
     line-height: 76px;
   }
 
-  @media (max-width: 991.98px) {
+  @include media-breakpoint-down(lg) {
     min-height: 178px;
   }
 
   &__icon {
     $size: 55px;
 
-    @media (max-width: 575.99px) {
+    @include media-breakpoint-down(sm) {
       $size: 45px;
       margin-bottom: 10px;
     }
@@ -109,7 +112,7 @@
   .row {
     gap: 20px;
 
-    @media (max-width: 767.98px) {
+    @include media-breakpoint-down(md) {
       margin-bottom: map-get($spacers, 5);
     }
   }
@@ -118,17 +121,10 @@
     p {
       line-height: 1.15;
     }
-
-    .btn {
-      @media (max-width: 575.99px) {
-        display: block;
-        width: 100%;
-      }
-    }
   }
 
   .image-wrapper {
-    @media (max-width: 767.98px) {
+    @include media-breakpoint-down(md) {
       order: -1;
     }
   }

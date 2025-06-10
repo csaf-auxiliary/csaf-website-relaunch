@@ -1,4 +1,8 @@
 {{ define "main" }}
+<!--
+  SPDX-License-Identifier: Apache-2.0
+  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+-->
 <main class="container py-5">
   <div class="page-specifications__container">
     <!-- #region: Headers -->
@@ -25,19 +29,27 @@
 
     <!-- #region: Text -->
     <div class="page-specifications__text">
-      <p>
-        This page lists the Common Security Advisory Framework (CSAF) specifications past, present, and future.
-      </p>
-      <p>
-        To see a current list of enhancements you can visit our
-        <a href="https://github.com/oasis-tcs/csaf">GitHub repository</a>.
-      </p>
-      <p>
-        <a href="https://www.oasis-open.org/join-a-tc/">
-          Click here
-        </a>
-        for information about becoming an OASIS member and joining a technical committee (TC).
-      </p>
+      {{ `
+        <!-- SPDX-SnippetBegin -->
+        <!--
+          SPDX-SnippetCopyrightText: 2023 OASIS CSAF TC
+          SPDX-License-Identifier: LicenseRef-OASIS-CSAF-TC-License
+        -->
+        <p>
+          This page lists the Common Security Advisory Framework (CSAF) specifications past, present, and future.
+        </p>
+        <p>
+          To see a current list of enhancements you can visit our
+          <a href="https://github.com/oasis-tcs/csaf">GitHub repository</a>.
+        </p>
+        <p>
+          <a href="https://www.oasis-open.org/join-a-tc/">
+            Click here
+          </a>
+          for information about becoming an OASIS member and joining a technical committee (TC).
+        </p>
+        <!-- SPDX-SnippetEnd -->
+      ` | safeHTML }}
     </div>
     <!-- #endregion -->
   </div>

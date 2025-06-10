@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: Apache-2.0
+// SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+
 .logo-container {
   color: $blue-800;
 
@@ -7,7 +10,7 @@
     box-sizing: content-box;
     transition: $transition-slow;
 
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg)  {
       height: 65px;
     }
   }
@@ -27,13 +30,13 @@ div.logo-container {
   max-width: 1440px;
 
   &__gh-container {
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg)  {
       height: 76px;
     }
   }
 
   &__gh-icon {
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg)  {
       height: 38px;
       width: 38px;
       box-sizing: content-box;
@@ -109,7 +112,7 @@ div.logo-container {
 
   &:has(#nav-toggle:checked) {
     .navbar__menu-mobile {
-      max-height: 377px;
+      max-height: 439px;
     }
   }
 }
@@ -130,7 +133,7 @@ div.logo-container {
     background-color: #d3d3d3;
   }
 
-  @media (max-width: 991.98px) {
+  @include media-breakpoint-down(lg) {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -142,7 +145,7 @@ div.logo-container {
     }
   }
 
-  @media (min-width: $bp-xl) {
+  @include media-breakpoint-up(xl) {
     gap: 16px;
   }
 }
@@ -172,11 +175,11 @@ div.logo-container {
     display: block;
   }
 
-  @media (min-width: $bp-lg) {
+  @include media-breakpoint-up(lg) {
     line-height: 76px;
   }
 
-  @media (min-width: $bp-xl) {
+  @include media-breakpoint-up(xl) {
     letter-spacing: 0.5px;
     padding-inline: 12px;
   }

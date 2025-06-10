@@ -1,5 +1,4 @@
 [
-
     {
         "url": "/specification/",
         "label": "Specification",
@@ -11,8 +10,13 @@
         "external": false
     },
     {
+        "url": "/events/",
+        "label": "Events",
+        "external": false
+    },
+    {
         "url": "/tools/",
-        "label": "Open Source Tools",
+        "label": "Tools",
         "external": false
     }
 ]

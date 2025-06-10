@@ -2,6 +2,11 @@
 
 This project contains multiple assets under different licenses. Please refer to the details below for proper attribution and compliance.
 
+## OASIS CSAF TC Assets
+The textual content of this website and the CSAF logo are
+the intellectual property of the OASIS CSAF Technical Committee (TC).
+All rights reserved.
+
 ## YouTube-Related Assets
 
 ### YouTube Branding Attribution
@@ -181,12 +186,26 @@ The **Darker Grotesque** font is used in this project.
 
 - **Source**: [Google Fonts](https://fonts.google.com/specimen/Darker+Grotesque)
 
+## Font: Manrope
+
+The **Manrope** font is used in this project.
+
+- **Font Name**: Manrope
+
+- **Designed by**: Mikhail Sharanda
+
+- **Distributed by**: Google Fonts
+
+- **License**: [SIL Open Font License 1.1](https://opensource.org/license/OFL-1.1)
+
+- **Source**: [Google Fonts](https://fonts.google.com/specimen/Manrope)
+
 ## Images Under Pixabay Content License
 
 The following images are sourced from Pixabay
 and are free for commercial and personal use under the **Pixabay Content License**:
 
-### Chip Technology Computer (`images/chip-1280x839.jpg`)
+### Chip Technology Computer (`index/chip-1280x839.jpg`)
 
   - **Source**: [Pixabay](https://pixabay.com/photos/chip-technology-computer-4254845/)
 
@@ -196,7 +215,7 @@ and are free for commercial and personal use under the **Pixabay Content License
 
   - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
 
-### Source Code Software (`images/code-960x640.jpg`)
+### Source Code Software (`index/code-960x640.jpg`)
 
   - **Source**: [Pixabay](https://pixabay.com/photos/source-code-software-computer-4280758/)
 
@@ -205,6 +224,56 @@ and are free for commercial and personal use under the **Pixabay Content License
   - **Author**: [Elchinator](https://pixabay.com/users/elchinator-10722855/)
 
   - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
+
+### Checklist survey review computer (`events/workshops/2024/checklist-survey-review-computer.jpg`)
+
+  - **Source**: [Pixabay](https://pixabay.com/illustrations/checklist-survey-review-computer-7252443/)
+
+  - **License**: [Pixabay Content License](https://pixabay.com/service/terms/)
+
+  - **Author**: [David Jones](https://pixabay.com/users/aagraphics-27946333/)
+
+  - **Distributed by**: [Pixabay, a Canva Germany GmbH brand](https://pixabay.com/)
+
+## Images Under Unsplash License
+
+The following images are sourced from Unsplash
+and are free for commercial and personal use under the **Unsplash License**:
+
+### Person, die Trackpad verwendet (`events/workshops/2024/person-using-the-trackpad.jpg`)
+
+  - **Source**: [Unsplash](https://unsplash.com/de/fotos/person-die-trackpad-verwendet-P1qyEf1g0HU)
+
+  - **License**: [Unsplash License](https://unsplash.com/license)
+
+  - **Author**: [Glenn Carstens-Peters](https://unsplash.com/de/@glenncarstenspeters)
+
+  - **Distributed by**: [Unsplash Inc](https://unsplash.com/)
+
+## Images Under Freepik License
+
+The following images are sourced from Freepik
+and are free for commercial and personal use under the **Freepik License**:
+
+### Flat design ssl illustration (`events/default/workshop_list.png`)
+
+  - **Source**: [Freepik](https://www.freepik.com/free-vector/flat-design-ssl-illustration_22112343.htm)
+
+  - **License**: [Freepik License](https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement)
+
+  - **Author**: [rawpixel.com](https://www.freepik.com/author/rawpixel-com)
+
+  - **Distributed by**: [Freepik Company S.L.](https://www.freepik.com/)
+
+### Business people with connection icons (`events/default/community_days_list.png`)
+
+  - **Source**: [Freepik](https://www.freepik.com/free-vector/business-people-with-connection-icons_3585358.htm)
+
+  - **License**: [Freepik License](https://www.freepik.com/legal/terms-of-use#nav-freepik-agreement)
+
+  - **Author**: [freepik](https://www.freepik.com/author/freepik)
+
+  - **Distributed by**: [Freepik Company S.L.](https://www.freepik.com/)
 
 ## Icons Used in This Project
 
@@ -248,8 +317,5 @@ form the Hugo website and was adapted to suit this project requirements.
 
 ## General License Notice
 
-- `csaf` is licensed as Free Software under the terms of the
-  [Apache License, Version 2.0](./LICENSES/Apache-2.0.txt).
-
-- See the specific source files for details, the license itself
+- See the specific source files for details, the license text itself
   can be found in the directory `LICENSES/`.

@@ -1,0 +1,18 @@
+{{ define "main" }}
+<!--
+  SPDX-License-Identifier: Apache-2.0
+  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
+-->
+<main class="container">
+  {{ .Content }}
+  <h2>{{ .Title }}</h2>
+  <ul>
+    {{ $pages := sort .Pages "Weight" "Title" "Date" }}
+    {{ range $pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}
