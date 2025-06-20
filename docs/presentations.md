@@ -45,28 +45,4 @@ SPDX-FileCopyrightText: FIRST <https://www.youtube.com/channel/UCK3_z6YyWvfqrOuC
 
 Replace `<video-id>` and `<channel-name-and-link>` with the actual ones.
 
-
-5. Insert the licensing information to the
-[LICENSE](LICENSE.md#video-thumbnails-attribution) file in this format:
-
-```
-### Thumbnail <number-of-the-new-file>
-- **Link Source**: [YouTube](https://www.youtube.com/watch?v=<video-id>)
-- **License**: <license-type>
-- **Author**: [<channel-name>](https://www.youtube.com/channel/<channel-id>)
-- **Distributor**: [YouTube, Inc.](https://www.youtube.com)
-- **Video ID**: <video-id>
-```
-
-replace `<number-of-the-new-file>`, `<<video-id>`, `<license-type>`,
-`<channel-name>` and `<channel-id>` with the actual data.
-
-How to define the `<license-type>`:
-
-- If video description contains the label
-  "Creative Commons Attribution license (reuse allowed)",
-  insert `[CC-BY-3.0](https://creativecommons.org/licenses/by/3.0/)`
-
-- Otherwise insert `[YouTube Content License](https://www.youtube.com/t/terms)`
-
-6. Open a pull request.
+5. Open a pull request.
