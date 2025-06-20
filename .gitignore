@@ -11,3 +11,5 @@ node_modules/
 public/
 resources/
 .hugo_build.lock
+screenshot.png
+.DS_Store

@@ -194,7 +194,7 @@ For processing the text, the following settings are applied:
 ## License
 
 Originally content from the old csaf.io webpage:
-Copyright 2023 OASIS CSAF TC - All Rights Reserved
+Copyright (c) [2023], OASIS CSAF TC
 
 New files developed for the webpage mechanics and the custom styles are
 Copyright 2025 German Federal Office for Information Security (BSI)

@@ -7,6 +7,8 @@ The textual content of this website and the CSAF logo are
 the intellectual property of the OASIS CSAF Technical Committee (TC).
 All rights reserved.
 
+**License**: [LicenseRef-OASIS-CSAF-TC-License](/LICENSES/LicenseRef-OASIS-CSAF-TC-License.txt)
+
 ## YouTube-Related Assets
 
 ### YouTube Branding Attribution
