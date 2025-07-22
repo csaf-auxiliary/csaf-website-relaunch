@@ -1,25 +1,18 @@
-<!--
-  SPDX-License-Identifier: Apache-2.0
+# csaf.io source code repository
 
-  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
-  Software-Engineering: 2025 Intevation GmbH <https://intevation.de>
+This repository contains the source code for the website https://csaf.io.
 
-  This file is Free Software under the Apache-2.0 License
-  without warranty, see README.md and LICENSES/Apache-2.0.txt for details.
--->
-
-# Website for csaf.io (beta)
-
-This website provides information and resources
-about the Common Security Advisory Framework (CSAF).
+Which is about the Common Security Advisory Framework (CSAF).
 CSAF helps organizations to create, distribute, and consume
 security advisories in a structured, machine-readable format.
 
-Built with Hugo and styled using Bootstrap.
+The website itself is build with Hugo and styled using Bootstrap.
 
 For more details about CSAF,
 visit the [OASIS CSAF Technical Committee](https://www.oasis-open.org/committees/csaf/charter.php).
 
+Also see [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md)
+and [LICENSE.md](LICENSE.md).
 ---
 
 ## Deployment
@@ -191,18 +184,13 @@ For processing the text, the following settings are applied:
 
 ---
 
-## License
+## History
 
-Originally content from the old csaf.io webpage:
-Copyright 2023 OASIS CSAF TC - All Rights Reserved
+Originally content from the old csaf.io webpage has been used.
 
-New files developed for the webpage mechanics and the custom styles are
-Copyright 2025 German Federal Office for Information Security (BSI)
+New files developed for the webpage mechanics and the custom styles were
+developed for the German Federal Office for Information Security (BSI)
 ([bsi.bund.de](https://www.bsi.bund.de))
-
-Additionally, there are third-party resources in the repository
-under various Free Software and non free content licenses.
-For more information, see [LICENSE.md](LICENSE.md).
 
 The webpage and repo was constructed 2025-03 by
 Intevation GmbH ([intevation.de](https://intevation.de))

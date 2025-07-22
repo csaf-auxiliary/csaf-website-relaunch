@@ -1,6 +1,17 @@
 # License Information
 
-This project contains multiple assets under different licenses. Please refer to the details below for proper attribution and compliance.
+This repository contains multiple assets under different licenses.
+
+In general files are
+
+> Copyright (c) 2025, OASIS Open
+
+under the [BSD-3-Clause](LICENSES/BSD-3-Clause) license.
+
+With the exception of files that have been marked
+is marked according to https://reuse.software/spec-3.2/
+and the ones listed below:
+
 
 ## OASIS CSAF TC Assets
 The textual content of this website and the CSAF logo are
