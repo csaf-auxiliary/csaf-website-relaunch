@@ -42,7 +42,7 @@ Event description.
 
 | Time | Session | Speaker |
 | --- | --- | --- |
-| 13:30 - 13:45 CET | {{< internal-link "Welcome & Keynote" >}} | Justin Murphy (CISA) |
+| 13:30 - 13:45 CET | {{< internal-link "Welcome & Keynote" >}} {{< tlp-clear >}} | Justin Murphy (CISA) |
 
 ## Location
 
@@ -85,6 +85,8 @@ welcoming you to Munich!
 ## Sessions
 
 {{< session-card >}}
+
+{{< tlp-clear >}}
 
 ### Welcome & Keynote
 
