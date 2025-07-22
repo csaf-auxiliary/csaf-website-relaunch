@@ -534,6 +534,42 @@ Example:
 
 ---
 
+#### TLP:Label
+
+5 tags that insert TLP labes with proper styling:
+
+```markdown
+{{< tlp-red >}}
+{{< tlp-amber >}}
+{{< tlp-amber-strict >}}
+{{< tlp-green >}}
+{{< tlp-clear >}}
+```
+
+**Examples**
+
+In the table of contents: within the table cell.
+
+```markdown
+| 13:30 - 13:45 CET | {{< internal-link "Welcome & Keynote" >}} {{< tlp-clear >}} | Justin Murphy (CISA) |
+```
+
+In the seccion card: after the opening `{{< session-card >}}` tag
+and before the heading.
+
+```markdown
+{{< session-card >}}
+
+{{< tlp-clear >}}
+
+### Welcome & Keynote
+
+...
+{{< /session-card >}}
+```
+
+---
+
 ## Publishing a Page
 
 When the page is ready to go live, set `draft` to `false`
