@@ -2,7 +2,7 @@
 
 This repository contains the source code for the website https://csaf.io.
 
-With is about Common Security Advisory Framework (CSAF).
+Which is about the Common Security Advisory Framework (CSAF).
 CSAF helps organizations to create, distribute, and consume
 security advisories in a structured, machine-readable format.
 
