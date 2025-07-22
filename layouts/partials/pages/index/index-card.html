@@ -1,7 +1,3 @@
-<!--
-  SPDX-License-Identifier: Apache-2.0
-  SPDX-FileCopyrightText: 2025 German Federal Office for Information Security (BSI) <https://www.bsi.bund.de>
--->
 {{ $href := cond .external .url (.url | relURL) }}
 <a href="{{ $href }}" class="index-card" {{ if .external }}rel="noopener noreferrer"{{ end }}>
   {{ partial "general/icon.html" (dict "name" .icon "class" "index-card__icon") }}
