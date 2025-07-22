@@ -18,11 +18,6 @@ params:
       preview: '/events/default/workshop_list.png'
       header: ''
 ---
-<!--
-  SPDX-SnippetCopyrightText: {{ now.Format "2006" }} OASIS CSAF TC
-  SPDX-License-Identifier: LicenseRef-OASIS-CSAF-TC-License
--->
-
 `Note:`
 
 `This message is only for editors. Delete this block before publishing the page.`
